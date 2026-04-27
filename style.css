@@ -270,7 +270,7 @@ h2 + .section-label {
 #contact a {
   display: inline-block;
   font-size: 0.85rem;
-  color: var(--accent);
+  color: var(--text);
   text-decoration: none;
   letter-spacing: 0.04em;
   border-bottom: 1px solid transparent;
@@ -279,7 +279,7 @@ h2 + .section-label {
   margin-bottom: 0.5rem;
 }
 
-#contact a:hover { border-bottom-color: var(--accent); }
+#contact a:hover { border-bottom-color: var(--text); }
 
 .location {
   font-size: 0.65rem;
