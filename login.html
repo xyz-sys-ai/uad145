@@ -23,16 +23,18 @@
 
       <!-- Left: login page scroll sections -->
       <div class="nav-boxes nav-sections">
-        <a href="#login"    class="nav-box" data-section="login">Login</a>
-        <a href="#forgot"   class="nav-box" data-section="forgot">Forgot Password</a>
-        <a href="#note"     class="nav-box" data-section="note">Note</a>
+        <a href="#login"  class="nav-box" data-section="login"  data-i18n="login.nav.login">Login</a>
+        <a href="#forgot" class="nav-box" data-section="forgot" data-i18n="login.nav.forgot">Forgot Password</a>
+        <a href="#note"   class="nav-box" data-section="note"   data-i18n="nav.note">Note</a>
       </div>
 
       <!-- Right: system controls -->
       <div class="nav-boxes nav-pages">
-        <a href="login.html" class="nav-box nav-page active">Clan</a>
-        <select class="nav-box nav-page lang-select" disabled>
+        <a href="login.html" class="nav-box nav-page active" data-i18n="nav.clan">Clan</a>
+        <select class="nav-box nav-page lang-select" onchange="setLanguage(this.value)">
           <option value="en">EN</option>
+          <option value="tr">TR</option>
+          <option value="de">DE</option>
         </select>
       </div>
     </div>
@@ -41,17 +43,17 @@
   <!-- Login -->
   <section id="login" class="login-section">
     <div class="login-box">
-      <p class="login-gate">Only UAD clan members.</p>
+      <p class="login-gate" data-i18n="login.gate">Only UAD clan members.</p>
       <form class="login-form" action="#" method="post">
         <div class="field">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Your username" autocomplete="off" />
+          <label for="username" data-i18n="login.username">Username</label>
+          <input type="text" id="username" name="username" data-i18n="login.username.placeholder" placeholder="Your username" autocomplete="off" />
         </div>
         <div class="field">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Your password" autocomplete="off" />
+          <label for="password" data-i18n="login.password">Password</label>
+          <input type="password" id="password" name="password" data-i18n="login.password.placeholder" placeholder="Your password" autocomplete="off" />
         </div>
-        <button type="submit">Enter</button>
+        <button type="submit" data-i18n="login.submit">Enter</button>
       </form>
     </div>
   </section>
@@ -59,40 +61,41 @@
   <!-- Forgot Password -->
   <section id="forgot" class="login-section">
     <div class="login-box">
-      <p class="login-gate">Forgot your password?</p>
+      <p class="login-gate" data-i18n="login.forgot.gate">Forgot your password?</p>
       <form class="login-form" action="#" method="post">
         <div class="field">
-          <label for="reset-email">Email</label>
+          <label for="reset-email" data-i18n="note.email">Email</label>
           <input type="email" id="reset-email" name="email" placeholder="your@email.com" autocomplete="off" />
         </div>
-        <button type="submit">Send Reset Link</button>
+        <button type="submit" data-i18n="login.forgot.submit">Send Reset Link</button>
       </form>
-      <p class="login-notice">This is a placeholder. Reset functionality requires a backend.</p>
+      <p class="login-notice" data-i18n="login.forgot.notice">This is a placeholder. Reset functionality requires a backend.</p>
     </div>
   </section>
 
   <!-- Note -->
   <section id="note" class="login-section">
     <div class="login-box login-box--wide">
-      <p class="login-gate">Leave a note.</p>
+      <p class="login-gate" data-i18n="login.note.gate">Leave a note.</p>
       <form class="login-form" action="#" method="post">
         <div class="field">
-          <label for="note-name">Name</label>
-          <input type="text" id="note-name" name="name" placeholder="Your name" autocomplete="off" />
+          <label for="note-name" data-i18n="note.name">Name</label>
+          <input type="text" id="note-name" name="name" data-i18n="note.name.placeholder" placeholder="Your name" autocomplete="off" />
         </div>
         <div class="field">
-          <label for="note-email">Email</label>
+          <label for="note-email" data-i18n="note.email">Email</label>
           <input type="email" id="note-email" name="email" placeholder="your@email.com" autocomplete="off" />
         </div>
         <div class="field">
-          <label for="note-message">Message</label>
-          <textarea id="note-message" name="message" rows="4" placeholder="Write something..."></textarea>
+          <label for="note-message" data-i18n="note.message">Message</label>
+          <textarea id="note-message" name="message" rows="4" data-i18n="note.message.placeholder" placeholder="Write something..."></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" data-i18n="note.submit">Send</button>
       </form>
     </div>
   </section>
 
+  <script src="lang.js"></script>
   <script>
     const sections = document.querySelectorAll('section[id]');
     const navBoxes = document.querySelectorAll('.nav-box[data-section]');

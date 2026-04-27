@@ -144,7 +144,8 @@ body {
   margin-top: 1.25rem;
   font-size: 0.6rem;
   letter-spacing: 0.06em;
-  color: var(--dim);
+  color: var(--muted);
+  opacity: 0.6;
 }
 
 .login-box--wide {
@@ -194,7 +195,7 @@ h2 {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -202,22 +203,27 @@ p {
   color: var(--text);
 }
 
-p + p { margin-top: 0.75rem; }
+p + p { margin-top: 1rem; }
 p.muted { color: var(--muted); }
 
 .section-label {
   font-size: 0.62rem;
-  letter-spacing: 0.1em;
-  color: var(--dim);
+  letter-spacing: 0.12em;
+  color: var(--muted);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   margin-top: 2rem;
 }
 
+h2 + .section-label {
+  margin-top: 0;
+}
+
 .closing {
-  margin-top: 2rem;
-  color: var(--muted);
+  margin-top: 2.25rem;
+  color: var(--text);
   font-style: italic;
+  opacity: 0.7;
 }
 
 
@@ -226,15 +232,15 @@ p.muted { color: var(--muted); }
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
+  gap: 0.8rem;
+  margin-bottom: 0;
 }
 
 .term-list li {
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  color: var(--muted);
+  color: var(--text);
 }
 
 .term {
@@ -250,13 +256,13 @@ p.muted { color: var(--muted); }
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  color: var(--muted);
+  gap: 0.65rem;
+  color: var(--text);
 }
 
 .plain-list li::before {
   content: '— ';
-  color: var(--dim);
+  color: var(--muted);
 }
 
 
@@ -269,8 +275,8 @@ p.muted { color: var(--muted); }
   letter-spacing: 0.04em;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
-  margin-top: 1.25rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #contact a:hover { border-bottom-color: var(--accent); }
@@ -278,7 +284,7 @@ p.muted { color: var(--muted); }
 .location {
   font-size: 0.65rem;
   letter-spacing: 0.12em;
-  color: var(--dim);
+  color: var(--muted);
 }
 
 
@@ -362,10 +368,11 @@ button[type="submit"]:hover {
 }
 
 .login-gate {
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
+  font-family: var(--nav-font);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--accent);
   margin-bottom: 2.25rem;
 }
 

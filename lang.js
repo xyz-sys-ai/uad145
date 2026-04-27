@@ -46,6 +46,19 @@ const translations = {
     'note.message':             'Message',
     'note.message.placeholder': 'Write something...',
     'note.submit':              'Send',
+
+    'login.nav.login':    'Login',
+    'login.nav.forgot':   'Forgot Password',
+    'login.gate':         'Only UAD clan members.',
+    'login.username':     'Username',
+    'login.username.placeholder': 'Your username',
+    'login.password':     'Password',
+    'login.password.placeholder': 'Your password',
+    'login.submit':       'Enter',
+    'login.forgot.gate':  'Forgot your password?',
+    'login.forgot.submit': 'Send Reset Link',
+    'login.forgot.notice': 'This is a placeholder. Reset functionality requires a backend.',
+    'login.note.gate':    'Leave a note.',
   },
 
   tr: {
@@ -95,6 +108,19 @@ const translations = {
     'note.message':             'Mesaj',
     'note.message.placeholder': 'Bir şeyler yazın...',
     'note.submit':              'Gönder',
+
+    'login.nav.login':    'Giriş',
+    'login.nav.forgot':   'Şifremi Unuttum',
+    'login.gate':         'Yalnızca UAD üyeleri.',
+    'login.username':     'Kullanıcı Adı',
+    'login.username.placeholder': 'Kullanıcı adınız',
+    'login.password':     'Şifre',
+    'login.password.placeholder': 'Şifreniz',
+    'login.submit':       'Giriş Yap',
+    'login.forgot.gate':  'Şifrenizi mi unuttunuz?',
+    'login.forgot.submit': 'Sıfırlama Bağlantısı Gönder',
+    'login.forgot.notice': 'Bu bir yer tutucudur. Sıfırlama işlevi için arka uç gereklidir.',
+    'login.note.gate':    'Bir not bırakın.',
   },
 
   de: {
@@ -144,6 +170,19 @@ const translations = {
     'note.message':             'Nachricht',
     'note.message.placeholder': 'Schreiben Sie etwas...',
     'note.submit':              'Senden',
+
+    'login.nav.login':    'Anmelden',
+    'login.nav.forgot':   'Passwort vergessen',
+    'login.gate':         'Nur UAD-Mitglieder.',
+    'login.username':     'Benutzername',
+    'login.username.placeholder': 'Ihr Benutzername',
+    'login.password':     'Passwort',
+    'login.password.placeholder': 'Ihr Passwort',
+    'login.submit':       'Eintreten',
+    'login.forgot.gate':  'Passwort vergessen?',
+    'login.forgot.submit': 'Link senden',
+    'login.forgot.notice': 'Platzhalter. Zurücksetzen erfordert ein Backend.',
+    'login.note.gate':    'Eine Notiz hinterlassen.',
   }
 };
 
