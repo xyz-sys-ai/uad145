@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clan Login — U.A. Duymaz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--
+    TECHNICAL NOTE:
+    This login form is a visual placeholder only.
+    Real authentication requires a backend server that:
+    - Receives credentials securely over HTTPS
+    - Verifies against a database
+    - Returns a session token or cookie
+  -->
+
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="nav-logo">UAD</a>
+
+      <!-- Left: login page scroll sections -->
+      <div class="nav-boxes nav-sections">
+        <a href="#login"    class="nav-box" data-section="login">Login</a>
+        <a href="#forgot"   class="nav-box" data-section="forgot">Forgot Password</a>
+        <a href="#note"     class="nav-box" data-section="note">Note</a>
+      </div>
+
+      <!-- Right: real pages -->
+      <div class="nav-boxes nav-pages">
+        <a href="index.html" class="nav-box nav-page">Home</a>
+        <a href="login.html" class="nav-box nav-page active">Clan Login</a>
+        <select class="nav-box nav-page lang-select" disabled>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login -->
+  <section id="login" class="login-section">
+    <div class="login-box">
+      <p class="login-gate">Only UAD clan members.</p>
+      <form class="login-form" action="#" method="post">
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Your username" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your password" autocomplete="off" />
+        </div>
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Forgot Password -->
+  <section id="forgot" class="login-section">
+    <div class="login-box">
+      <p class="login-gate">Forgot your password?</p>
+      <form class="login-form" action="#" method="post">
+        <div class="field">
+          <label for="reset-email">Email</label>
+          <input type="email" id="reset-email" name="email" placeholder="your@email.com" autocomplete="off" />
+        </div>
+        <button type="submit">Send Reset Link</button>
+      </form>
+      <p class="login-notice">This is a placeholder. Reset functionality requires a backend.</p>
+    </div>
+  </section>
+
+  <!-- Note -->
+  <section id="note" class="login-section">
+    <div class="login-box login-box--wide">
+      <p class="login-gate">Leave a note.</p>
+      <form class="login-form" action="#" method="post">
+        <div class="field">
+          <label for="note-name">Name</label>
+          <input type="text" id="note-name" name="name" placeholder="Your name" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="note-email">Email</label>
+          <input type="email" id="note-email" name="email" placeholder="your@email.com" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="note-message">Message</label>
+          <textarea id="note-message" name="message" rows="4" placeholder="Write something..."></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const sections = document.querySelectorAll('section[id]');
+    const navBoxes = document.querySelectorAll('.nav-box[data-section]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navBoxes.forEach(b => b.classList.remove('active'));
+          const active = document.querySelector(`.nav-box[data-section="${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>

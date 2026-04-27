@@ -8,152 +8,125 @@
 </head>
 <body>
 
-  <!-- ── Navigation ── -->
-  <nav>
-    <div class="nav-inner">
-      <span class="nav-name">U.A. Duymaz</span>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#note" class="nav-cta">Leave a Note</a></li>
-      </ul>
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="#home" class="nav-logo">UAD</a>
+
+      <!-- Left: in-page scroll sections -->
+      <div class="nav-boxes nav-sections">
+        <a href="#about"    class="nav-box" data-section="about"    data-i18n="nav.about">About</a>
+        <a href="#thinking" class="nav-box" data-section="thinking" data-i18n="nav.thinking">Thinking</a>
+        <a href="#work"     class="nav-box" data-section="work"     data-i18n="nav.work">Work</a>
+        <a href="#contact"  class="nav-box" data-section="contact"  data-i18n="nav.contact">Contact</a>
+        <a href="#note"     class="nav-box" data-section="note"     data-i18n="nav.note">Note</a>
+      </div>
+
+      <!-- Right: real pages -->
+      <div class="nav-boxes nav-pages">
+        <a href="#home"      class="nav-box nav-page" data-section="home" data-i18n="nav.home">Home</a>
+        <a href="login.html" class="nav-box nav-page">Clan Login</a>
+        <select class="nav-box nav-page lang-select" onchange="setLanguage(this.value)">
+          <option value="en">EN</option>
+          <option value="tr">TR</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
     </div>
   </nav>
 
-  <!-- ── Home / Hero ── -->
-  <section id="home" class="hero">
+  <section id="home">
     <div class="container">
-      <p class="label">U.A. Duymaz</p>
-      <h1>Systems.<br>Strategy.<br>Execution.</h1>
-      <p class="tagline">Business architecture · Product thinking · Conscious leadership</p>
+      <h1 data-i18n="hero.h1">Systems.<br>Strategy.<br>Execution.</h1>
+      <p class="tagline" data-i18n="hero.tagline">I work where structure determines outcome.</p>
     </div>
   </section>
 
-  <!-- ── About ── -->
-  <section id="about" class="about">
+  <section id="about">
     <div class="container">
-      <h2>About</h2>
-      <p>
-        I build systems, companies, and strategic frameworks rooted in clarity,
-        timing, and long-term alignment.
-      </p>
-      <p>
-        My work operates at the intersection of business architecture, product
-        thinking, and conscious leadership.
-      </p>
+      <h2 data-i18n="about.h2">About</h2>
+      <p data-i18n="about.p1">I design and refine systems that hold under pressure.</p>
+      <p data-i18n="about.p2">My work sits at the intersection of business architecture, operational design, and long-term execution.</p>
+      <p class="muted" data-i18n="about.p3">The focus is clarity, structure, and alignment over time.</p>
+    </div>
+  </section>
 
-      <!-- Current focus projects -->
-      <h3>Current Focus</h3>
-      <ul class="focus-list">
-        <li>
-          <span class="project-name">UAD_OS</span>
-          <span class="project-desc">Strategic systems, decision frameworks, and execution models.</span>
-        </li>
-        <li>
-          <span class="project-name">XYZ-SYS</span>
-          <span class="project-desc">System architecture and scalable operational infrastructure.</span>
-        </li>
-        <li>
-          <span class="project-name">XYZKAL</span>
-          <span class="project-desc">Data-driven CPQ system for scalable configuration, pricing, and quoting.</span>
-        </li>
+  <section id="thinking">
+    <div class="container">
+      <h2 data-i18n="thinking.h2">Thinking</h2>
+      <p class="section-label" data-i18n="thinking.label1">Every system is evaluated through:</p>
+      <ul class="term-list">
+        <li><span class="term">TÖZ</span> <span data-i18n="thinking.toz">alignment</span></li>
+        <li><span class="term">SEYR</span> <span data-i18n="thinking.seyr">flow</span></li>
+        <li><span class="term">KIRILMA</span> <span data-i18n="thinking.kirilma">pressure</span></li>
+        <li><span class="term">KAVŞAK</span> <span data-i18n="thinking.kavsak">decision</span></li>
       </ul>
-
-      <!-- Operating principles -->
-      <h3>Principles</h3>
-      <ol class="principles-list">
-        <li>Reality before narrative.</li>
-        <li>Clarity before movement.</li>
-        <li>Systems before noise.</li>
-        <li>Patience before force.</li>
-        <li>Execution after alignment.</li>
-      </ol>
+      <p class="section-label" data-i18n="thinking.label2">In practice:</p>
+      <ul class="plain-list">
+        <li data-i18n="thinking.li1">simplifying decision structures</li>
+        <li data-i18n="thinking.li2">identifying pressure points early</li>
+        <li data-i18n="thinking.li3">aligning execution with reality</li>
+      </ul>
+      <p class="closing" data-i18n="thinking.closing">The goal is not to force outcomes, but to shape the conditions where they emerge.</p>
     </div>
   </section>
 
-  <!-- ── Resume ── -->
-  <section id="resume" class="resume">
+  <section id="work">
     <div class="container">
-      <h2>Resume</h2>
-
-      <div class="resume-block">
-        <p class="resume-role">Strategic Founder &amp; Systems Architect</p>
-        <p class="resume-body">
-          Two decades of experience across global markets — building companies,
-          designing operational systems, and leading at the intersection of
-          business architecture, product thinking, and long-term execution.
-        </p>
-      </div>
-
-      <div class="resume-block">
-        <p class="resume-role">Areas of Work</p>
-        <ul class="resume-list">
-          <li>Business architecture and organisational design</li>
-          <li>Product thinking and systems-led growth</li>
-          <li>Operational infrastructure and scalable execution models</li>
-          <li>Strategic decision frameworks and leadership systems</li>
-        </ul>
-      </div>
-
-      <div class="resume-block">
-        <p class="resume-role">Transition — 2025</p>
-        <p class="resume-body">
-          In 2025, stepped away from corporate leadership to focus entirely on
-          building UAD_OS and its adjacent systems — a long-form project in
-          strategic clarity and operational design.
-        </p>
-      </div>
-
-      <div class="resume-block">
-        <p class="resume-role">Markets &amp; Geographies</p>
-        <p class="resume-body">
-          Dubai · Istanbul · and across emerging and established global markets.
-        </p>
-      </div>
+      <h2 data-i18n="work.h2">Work</h2>
+      <p class="section-label" data-i18n="work.label">Selected Work</p>
+      <ul class="plain-list">
+        <li data-i18n="work.li1">Designing operational systems across markets</li>
+        <li data-i18n="work.li2">Building UAD_OS as a long-term system architecture</li>
+        <li data-i18n="work.li3">Developing XYZ-SYS for scalable operations</li>
+        <li data-i18n="work.li4">Working on XYZKAL for data-driven CPQ systems</li>
+      </ul>
     </div>
   </section>
 
-  <!-- ── Contact ── -->
-  <section id="contact" class="contact">
+  <section id="contact">
     <div class="container">
-      <h2>Contact</h2>
+      <h2 data-i18n="contact.h2">Contact</h2>
+      <p class="muted" data-i18n="contact.intro">If the work resonates, reach out.</p>
       <a href="mailto:u.a.duymaz@gmail.com">u.a.duymaz@gmail.com</a>
-      <p class="location">Dubai · Istanbul</p>
+      <p class="location" data-i18n="contact.location">Dubai · Istanbul</p>
     </div>
   </section>
 
-  <!-- ── Leave a Note ── -->
-  <section id="note" class="note">
+  <section id="note">
     <div class="container">
-      <h2>Leave a Note</h2>
-      <p class="note-intro">
-        If something resonated, or you'd like to connect — leave a note.
-      </p>
-
-      <!-- Visual placeholder form — no backend yet -->
+      <h2 data-i18n="note.h2">Note</h2>
       <form class="note-form" action="#" method="post">
         <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off" />
+          <label for="name" data-i18n="note.name">Name</label>
+          <input type="text" id="name" name="name" data-i18n="note.name.placeholder" placeholder="Your name" autocomplete="off" />
         </div>
         <div class="field">
-          <label for="email">Email</label>
+          <label for="email" data-i18n="note.email">Email</label>
           <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="off" />
         </div>
         <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write something..."></textarea>
+          <label for="message" data-i18n="note.message">Message</label>
+          <textarea id="message" name="message" rows="5" data-i18n="note.message.placeholder" placeholder="Write something..."></textarea>
         </div>
-        <button type="submit">Send Note</button>
+        <button type="submit" data-i18n="note.submit">Send</button>
       </form>
-
-      <p class="form-notice">
-        This form is a visual placeholder. Backend connection will be added later.
-      </p>
     </div>
   </section>
 
+  <script src="lang.js"></script>
+  <script>
+    const sections = document.querySelectorAll('section[id]');
+    const navBoxes = document.querySelectorAll('.nav-box[data-section]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navBoxes.forEach(b => b.classList.remove('active'));
+          const active = document.querySelector(`.nav-box[data-section="${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => observer.observe(s));
+  </script>
 </body>
 </html>
