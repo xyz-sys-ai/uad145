@@ -349,6 +349,15 @@ button[type="submit"]:hover {
   color: var(--bg);
 }
 
+.form-success {
+  display: none;
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 
 /* ── Login page ── */
 .login-section {

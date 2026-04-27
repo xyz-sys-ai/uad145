@@ -95,7 +95,8 @@
     <div class="container">
       <h2 data-i18n="note.h2">Note</h2>
       <form class="note-form" action="https://formspree.io/f/xbdqvljq" method="POST">
-        <input type="hidden" name="_subject" value="New note from uad145.com" />
+        <input type="hidden" name="_subject" value="New strategic note — uad145" />
+        <input type="hidden" name="_next" value="https://uad145.com/?submitted=true#note" />
         <div class="field">
           <label for="name" data-i18n="note.name">Name</label>
           <input type="text" id="name" name="name" data-i18n="note.name.placeholder" placeholder="Your name" autocomplete="off" />
@@ -110,11 +111,17 @@
         </div>
         <button type="submit" data-i18n="note.submit">Send</button>
       </form>
+      <p class="form-success" id="note-success">Message received.</p>
     </div>
   </section>
 
   <script src="lang.js"></script>
   <script>
+    if (new URLSearchParams(window.location.search).get('submitted') === 'true') {
+      const msg = document.getElementById('note-success');
+      if (msg) msg.style.display = 'block';
+    }
+
     const sections = document.querySelectorAll('section[id]');
     const navBoxes = document.querySelectorAll('.nav-box[data-section]');
     const observer = new IntersectionObserver((entries) => {
