@@ -6,6 +6,7 @@ const translations = {
     'nav.work':     'Work',
     'nav.contact':  'Contact',
     'nav.note':     'Note',
+    'nav.clan':     'Clan',
 
     'hero.h1':      'Systems.\nStrategy.\nExecution.',
     'hero.tagline': 'I work where structure determines outcome.',
@@ -54,6 +55,7 @@ const translations = {
     'nav.work':     'Çalışmalar',
     'nav.contact':  'İletişim',
     'nav.note':     'Not',
+    'nav.clan':     'Boy',
 
     'hero.h1':      'Sistemler.\nStrateji.\nUygulama.',
     'hero.tagline': 'Yapının sonucu belirlediği yerde çalışıyorum.',
@@ -102,6 +104,7 @@ const translations = {
     'nav.work':     'Arbeit',
     'nav.contact':  'Kontakt',
     'nav.note':     'Notiz',
+    'nav.clan':     'Clan',
 
     'hero.h1':      'Systeme.\nStrategie.\nUmsetzung.',
     'hero.tagline': 'Ich arbeite dort, wo Struktur das Ergebnis bestimmt.',

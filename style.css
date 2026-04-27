@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+
 /* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,11 +10,12 @@
 :root {
   --bg:     #0a0a0a;
   --border: rgba(255, 85, 48, 0.15);
-  --text:   #ff5530;
-  --muted:  #cc3318;
+  --text:   #d8d0c8;
+  --muted:  #a85a45;
   --dim:    #6b2010;
   --accent: #ff5530;
   --mono:   'Courier New', monospace;
+  --nav-font: 'Space Grotesk', sans-serif;
   --nav-h:  3rem;
 }
 
@@ -63,9 +66,10 @@ body {
 
 /* UAD logo */
 .nav-logo {
+  font-family: var(--nav-font);
   font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.2em;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   color: var(--accent);
   text-decoration: none;
   margin-right: 0.5rem;
@@ -89,9 +93,10 @@ body {
   height: 1.7rem;
   padding: 0 0.65rem;
   border: 1px solid var(--dim);
-  font-family: var(--mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.12em;
+  font-family: var(--nav-font);
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--dim);
