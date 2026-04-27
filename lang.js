@@ -47,6 +47,7 @@ const translations = {
     'note.message':             'Message',
     'note.message.placeholder': 'Write something...',
     'note.submit':              'Send',
+    'note.success':             'Message received.',
 
     'login.nav.login':    'Login',
     'login.nav.forgot':   'Forgot Password',
@@ -110,6 +111,7 @@ const translations = {
     'note.message':             'Mesaj',
     'note.message.placeholder': 'Bir şeyler yazın...',
     'note.submit':              'Gönder',
+    'note.success':             'Mesaj alındı.',
 
     'login.nav.login':    'Giriş',
     'login.nav.forgot':   'Şifremi Unuttum',
@@ -173,6 +175,7 @@ const translations = {
     'note.message':             'Nachricht',
     'note.message.placeholder': 'Schreiben Sie etwas...',
     'note.submit':              'Senden',
+    'note.success':             'Nachricht erhalten.',
 
     'login.nav.login':    'Anmelden',
     'login.nav.forgot':   'Passwort vergessen',

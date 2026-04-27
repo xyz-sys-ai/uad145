@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UAD</title>
+  <meta name="description" content="UAD Clan — Members only." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -65,7 +66,7 @@
       <form class="login-form" action="#" method="post">
         <div class="field">
           <label for="reset-email" data-i18n="note.email">Email</label>
-          <input type="email" id="reset-email" name="email" placeholder="your@email.com" autocomplete="off" />
+          <input type="email" id="reset-email" name="email" placeholder="your@email.com" autocomplete="off" required />
         </div>
         <button type="submit" data-i18n="login.forgot.submit">Send Reset Link</button>
       </form>
@@ -77,18 +78,20 @@
   <section id="note" class="login-section">
     <div class="login-box login-box--wide">
       <p class="login-gate" data-i18n="login.note.gate">Leave a note.</p>
-      <form class="login-form" action="#" method="post">
+      <form class="login-form" action="https://formspree.io/f/xbdqvljq" method="POST">
+        <input type="hidden" name="_subject" value="New strategic note — uad145" />
+        <input type="hidden" name="_next" value="https://uad145.com/login.html#note" />
         <div class="field">
           <label for="note-name" data-i18n="note.name">Name</label>
           <input type="text" id="note-name" name="name" data-i18n="note.name.placeholder" placeholder="Your name" autocomplete="off" />
         </div>
         <div class="field">
           <label for="note-email" data-i18n="note.email">Email</label>
-          <input type="email" id="note-email" name="email" placeholder="your@email.com" autocomplete="off" />
+          <input type="email" id="note-email" name="email" placeholder="your@email.com" autocomplete="off" required />
         </div>
         <div class="field">
           <label for="note-message" data-i18n="note.message">Message</label>
-          <textarea id="note-message" name="message" rows="4" data-i18n="note.message.placeholder" placeholder="Write something..."></textarea>
+          <textarea id="note-message" name="message" rows="4" data-i18n="note.message.placeholder" placeholder="Write something..." required></textarea>
         </div>
         <button type="submit" data-i18n="note.submit">Send</button>
       </form>
@@ -107,7 +110,10 @@
           if (active) active.classList.add('active');
         }
       });
-    }, { threshold: 0.4 });
+    }, {
+      rootMargin: '-40% 0px -55% 0px',
+      threshold: 0
+    });
     sections.forEach(s => observer.observe(s));
   </script>
 </body>
