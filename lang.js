@@ -36,7 +36,8 @@ const translations = {
     'work.li4':   'Working on XYZKAL for data-driven CPQ systems',
 
     'contact.h2':       'Contact',
-    'contact.intro':    'If the work resonates, reach out.',
+    'contact.intro':    'Always Welcome',
+    'contact.sub':      'Leave a note through the form.',
     'contact.location': 'Dubai · Istanbul',
 
     'note.h2':                  'Note',
@@ -98,7 +99,8 @@ const translations = {
     'work.li4':   'XYZKAL üzerinde veri odaklı CPQ sistemleri üzerine çalışmak',
 
     'contact.h2':       'İletişim',
-    'contact.intro':    'Çalışma ilginizi çektiyse ulaşın.',
+    'contact.intro':    'Her Zaman Bekleriz',
+    'contact.sub':      'Formu kullanarak bir not bırakın.',
     'contact.location': 'Dubai · İstanbul',
 
     'note.h2':                  'Not',
@@ -160,7 +162,8 @@ const translations = {
     'work.li4':   'An XYZKAL für datengesteuerte CPQ-Systeme arbeiten',
 
     'contact.h2':       'Kontakt',
-    'contact.intro':    'Wenn die Arbeit resoniert, melden Sie sich.',
+    'contact.intro':    'Jederzeit willkommen',
+    'contact.sub':      'Hinterlassen Sie eine Notiz über das Formular.',
     'contact.location': 'Dubai · Istanbul',
 
     'note.h2':                  'Notiz',
