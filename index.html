@@ -132,7 +132,10 @@
           if (active) active.classList.add('active');
         }
       });
-    }, { threshold: 0.4 });
+    }, {
+      rootMargin: '-40% 0px -55% 0px',
+      threshold: 0
+    });
     sections.forEach(s => observer.observe(s));
   </script>
 </body>
