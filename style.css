@@ -382,7 +382,37 @@ button[type="submit"]:hover {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.login-sub {
+  font-family: var(--nav-font);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.sys-enter-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--nav-font);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: var(--bg);
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.sys-enter-btn:hover {
+  background-color: transparent;
+  color: var(--accent);
 }
 
 .login-form {

@@ -9,14 +9,6 @@
 </head>
 <body>
 
-  <!--
-    TECHNICAL NOTE:
-    This login form is a visual placeholder only.
-    Real authentication requires a backend server that:
-    - Receives credentials securely over HTTPS
-    - Verifies against a database
-    - Returns a session token or cookie
-  -->
 
   <nav class="topnav">
     <div class="topnav-inner">
@@ -24,7 +16,7 @@
 
       <!-- Left: login page scroll sections -->
       <div class="nav-boxes nav-sections">
-        <a href="#login" class="nav-box" data-section="login" data-i18n="signal.nav">Signal</a>
+        <a href="#login" class="nav-box" data-section="login" data-i18n="system.nav">System</a>
         <a href="#note"  class="nav-box" data-section="note"  data-i18n="nav.note">Note</a>
       </div>
 
@@ -40,28 +32,12 @@
     </div>
   </nav>
 
-  <!-- Signal -->
+  <!-- System Access -->
   <section id="login" class="login-section">
-    <div class="login-box login-box--wide">
-      <p class="login-gate" data-i18n="signal.gate">Access is not granted. Leave your signal.</p>
-      <form class="login-form" action="https://formspree.io/f/xbdqvljq" method="POST">
-        <input type="hidden" name="_subject" value="Signal — uad145" />
-        <input type="hidden" name="_next" value="https://uad145.com/login.html?signal=true#login" />
-        <div class="field">
-          <label for="signal-name" data-i18n="signal.name">Name</label>
-          <input type="text" id="signal-name" name="name" data-i18n="signal.name.placeholder" placeholder="Your name" autocomplete="off" />
-        </div>
-        <div class="field">
-          <label for="signal-context" data-i18n="signal.context">Context</label>
-          <input type="text" id="signal-context" name="context" data-i18n="signal.context.placeholder" placeholder="Optional" autocomplete="off" />
-        </div>
-        <div class="field">
-          <label for="signal-message" data-i18n="signal.message">Signal</label>
-          <textarea id="signal-message" name="message" rows="4" data-i18n="signal.message.placeholder" placeholder="Write your signal..." required></textarea>
-        </div>
-        <button type="submit" data-i18n="signal.submit">Send</button>
-      </form>
-      <p class="form-success" id="signal-success" data-i18n="signal.success">Signal received.</p>
+    <div class="login-box">
+      <p class="login-gate" data-i18n="system.gate">UAD System</p>
+      <p class="login-sub" data-i18n="system.sub">Authorised access only.</p>
+      <a href="https://sys.corp.com.tr/login.html" class="sys-enter-btn" data-i18n="system.enter">Enter</a>
     </div>
   </section>
 
@@ -91,11 +67,6 @@
 
   <script src="lang.js"></script>
   <script>
-    if (new URLSearchParams(window.location.search).get('signal') === 'true') {
-      const msg = document.getElementById('signal-success');
-      if (msg) msg.style.display = 'block';
-    }
-
     const sections = document.querySelectorAll('section[id]');
     const navBoxes = document.querySelectorAll('.nav-box[data-section]');
     const observer = new IntersectionObserver((entries) => {

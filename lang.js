@@ -49,17 +49,11 @@ const translations = {
     'note.submit':              'Send',
     'note.success':             'Message received.',
 
-    'signal.nav':                  'Signal',
-    'signal.gate':                 'Access is not granted. Leave your signal.',
-    'signal.name':                 'Name',
-    'signal.name.placeholder':     'Your name',
-    'signal.context':              'Context',
-    'signal.context.placeholder':  'Optional',
-    'signal.message':              'Signal',
-    'signal.message.placeholder':  'Write your signal...',
-    'signal.submit':               'Send',
-    'signal.success':              'Signal received.',
-    'login.note.gate':             'Leave a note.',
+    'system.nav':   'System',
+    'system.gate':  'UAD System',
+    'system.sub':   'Authorised access only.',
+    'system.enter': 'Enter',
+    'login.note.gate': 'Leave a note.',
   },
 
   tr: {
@@ -112,17 +106,11 @@ const translations = {
     'note.submit':              'Gönder',
     'note.success':             'Mesaj alındı.',
 
-    'signal.nav':                  'Sinyal',
-    'signal.gate':                 'Erişim izni verilmedi. Sinyalinizi bırakın.',
-    'signal.name':                 'İsim',
-    'signal.name.placeholder':     'Adınız',
-    'signal.context':              'Bağlam',
-    'signal.context.placeholder':  'İsteğe bağlı',
-    'signal.message':              'Sinyal',
-    'signal.message.placeholder':  'Sinyalinizi yazın...',
-    'signal.submit':               'Gönder',
-    'signal.success':              'Sinyal alındı.',
-    'login.note.gate':             'Bir not bırakın.',
+    'system.nav':   'Sistem',
+    'system.gate':  'UAD Sistemi',
+    'system.sub':   'Yalnızca yetkili erişim.',
+    'system.enter': 'Giriş',
+    'login.note.gate': 'Bir not bırakın.',
   },
 
   de: {
@@ -175,17 +163,11 @@ const translations = {
     'note.submit':              'Senden',
     'note.success':             'Nachricht erhalten.',
 
-    'signal.nav':                  'Signal',
-    'signal.gate':                 'Zugang nicht gewährt. Hinterlassen Sie Ihr Signal.',
-    'signal.name':                 'Name',
-    'signal.name.placeholder':     'Ihr Name',
-    'signal.context':              'Kontext',
-    'signal.context.placeholder':  'Optional',
-    'signal.message':              'Signal',
-    'signal.message.placeholder':  'Schreiben Sie Ihr Signal...',
-    'signal.submit':               'Senden',
-    'signal.success':              'Signal empfangen.',
-    'login.note.gate':             'Eine Notiz hinterlassen.',
+    'system.nav':   'System',
+    'system.gate':  'UAD System',
+    'system.sub':   'Nur autorisierter Zugang.',
+    'system.enter': 'Eintreten',
+    'login.note.gate': 'Eine Notiz hinterlassen.',
   }
 };
 
